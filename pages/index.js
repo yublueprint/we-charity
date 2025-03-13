@@ -32,7 +32,7 @@ export default function Home() {
 								<h3>Donate to WE Charity <br/> @ <span className={styles.yorku}>York University</span></h3>
 								<form className={styles.donationForm} onSubmit={handleSubmit}>
 									<img src="/logo_2.png" width={100}/>
-									<input type="text" id="name" placeholder="Your Name" name="name" required />
+									<input type="text" id="name" placeholder="Name" name="name" required />
 									<input type="email" id="email" placeholder="Email" name="email" required />
 									<input type="number" id="amount" placeholder="Amount (C$)" name="amount" min="0" required />
 									<button type="submit">Donate</button>

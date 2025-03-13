@@ -1,100 +1,145 @@
 .container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
 }
 
 .container .col {
-  flex: 1;
+	flex: 1;
 }
 
 .yorku {
-  text-decoration: underline wavy rgb(191, 37, 37);
-  text-underline-offset: 6px;
+	text-decoration: underline wavy rgb(191, 37, 37);
+	text-underline-offset: 6px;
 }
 
 .banner {
-  background-image: url("/banner_1.png");
-  background-size: cover;
-  height: 100vh;
-  width: 100%;
+	background-image: url("/banner_1.png");
+	background-size: cover;
+	height: 100vh;
+	width: 100%;
 }
 
-.donationWrapper, .banner {
-  height: 100vh;
-  width: 100%;
-  color: black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.donationWrapper,
+.banner {
+	height: 100vh;
+	width: 100%;
+	color: black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .banner {
-  color: white;
-  flex-direction: column;
+	color: white;
+	flex-direction: column;
 }
 
 .donationWrapper .inner {
-  width: 100%;
-  max-width: 350px;
-  display: block;
-  margin: auto;
+	width: 100%;
+	max-width: 350px;
+	display: block;
+	margin: auto;
 }
 
 .donationWrapper .inner h3 {
-  font-size: 20px;
-  font-weight: bold;
-  margin: 30px 0;
-  color: white;
+	font-size: 20px;
+	font-weight: bold;
+	margin: 30px 0;
+	color: white;
 }
 
 .donationWrapper .donationForm {
-  background-color: white;
-  padding: 40px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	background-color: white;
+	padding: 40px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .donationForm img {
-  display: block;
-  margin: auto;
+	display: block;
+	margin: auto;
 }
 
 .donationForm input {
-  display: block;
-  width: 100%;
-  font-size: 18px;
-  padding: 12px 10px;
-  margin: 10px 0;
-  border-radius: 8px;
-  color: rgb(170, 170, 170);
-  border: 1px solid rgb(195, 195, 195);
+	display: block;
+	width: 100%;
+	font-size: 16px;
+	padding: 12px 10px;
+	margin: 10px 0;
+	border-radius: 8px;
+	color: rgb(170, 170, 170);
+	border: 1px solid rgb(195, 195, 195);
 }
 
 .donationForm input::placeholder {
-  color: rgb(195, 195, 195);
+	color: rgb(195, 195, 195);
 }
 
 .donationForm button {
-  padding: 15px 10px;
-  width: 100%;
-  background-color: #f5a623;
-  cursor: pointer;
-  border: none;
-  border-radius: 12px;
-  font-weight: bold;
-  font-size: 18px;
+	padding: 15px 10px;
+	width: 100%;
+	background-color: #f5a623;
+	cursor: pointer;
+	border: none;
+	border-radius: 12px;
+	font-weight: bold;
+	font-size: 17px;
 	border-bottom: 4px solid #a97116;
 }
 
 .inner p {
-  color: white;
-  font-size: 18px;
+	color: white;
+	font-size: 18px;
 }
 
 .inner a {
-  color: rgb(0, 98, 255);
-  text-decoration: underline;
+	color: rgb(0, 98, 255);
+	text-decoration: underline;
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+	.container {
+		flex-direction: column;
+	}
+
+	.banner {
+		height: auto;
+		padding: 20px;
+		margin-top: 100px;
+	}
+
+	.donationWrapper,
+	.banner {
+		height: auto;
+		padding: 20px;
+	}
+
+	.donationWrapper .inner {
+		width: 100%;
+		max-width: none;
+	}
+
+	.donationWrapper .inner h3 {
+		font-size: 18px;
+		margin: 20px 0;
+	}
+
+	.donationWrapper .donationForm {
+		padding: 20px;
+	}
+
+	.donationForm input {
+		font-size: 14px;
+		padding: 10px 8px;
+		margin: 8px 0;
+	}
+
+	.donationForm button {
+		padding: 12px 8px;
+		font-size: 15px;
+	}
 }
